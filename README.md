@@ -3,3 +3,5 @@
 
 - Storing and fetching data from local storage.
 
+# Changed Navbar 
+Mainly focused on Responsive Navbar for Mobile and Desktop.
