@@ -5,3 +5,5 @@
 
 # Changed Navbar 
 Mainly focused on Responsive Navbar for Mobile and Desktop.
+
+# Auto Hide chaged
