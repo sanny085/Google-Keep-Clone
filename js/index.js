@@ -32,8 +32,8 @@ const addNewNote = (text = '') =>
    note1.classList.add('m-3');
    
     const htmlData = `<div class="operation"  style="float: right">
-              <button class="edit border-0 bg-none"> <i class="fas fa-edit"></i></button>
-              <button class="delete border-0 bg-none" > <i class="fas fa-trash-alt"></i></button>
+              <button class="edit border-0 bg-none"> <i class="fas fa-edit edit1"></i></button>
+              <button class="delete border-0 bg-none" > <i class="fas fa-trash-alt trash1"></i></button>
           </div>
           <div class="main ${text ? " " : "hidden"}"></div>
           <textarea class="${text ? "hidden":" "} form-control" rows="15" name="" id=""  ></textarea>
