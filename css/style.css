@@ -19,6 +19,81 @@ font-family: Arial, Helvetica, sans-serif;
 width:35px;
 height:35px;
 }
+ 
+#formWhole{
+    margin-left:50px;
+    min-width:580px;
+} 
+
+@media (max-width: 1200px){
+    #formWhole{
+        display:none;
+        margin-left:0;
+    }
+   }
+   
+@media (max-width: 575px) {
+    #userIconSec1{
+        display:none;
+        margin-left:0;
+    }
+    #userIconSec2{
+        padding-left: 30px;
+    }
+ }
+ 
+ 
+/*Small devices (landscape phones, 576px and up)*/ 
+@media (min-width: 576px) {
+    #userIconSec1{
+        padding-left: 5px;
+       
+    }
+    #userIconSec2{
+        padding-left: 1px;
+    }
+ }
+
+/*Medium devices (tablets, 768px and up)*/ 
+@media (min-width: 768px) { 
+    #userIconSec1{
+        padding-left: 190px;
+    }
+    #userIconSec2{
+        padding-left: 10px;
+    }
+ }
+
+/*Large devices (desktops, 992px and up)*/ 
+@media (min-width: 992px) { 
+    #userIconSec1{
+        padding-left: 320px;
+    }
+    #userIconSec2{
+        padding-left: 10px;
+    }
+ }
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    #userIconSec1{
+        padding-left: 0px;
+    }
+    #userIconSec2{
+        padding-left: 10px;
+    }
+ }
+
+/*XX-Large devices (larger desktops, 1400px and up)*/ 
+@media (min-width: 1400px) { 
+    #userIconSec1{
+        padding-left: 0px;
+    }
+    #userIconSec2{
+        padding-left: 10px;
+    }
+ }
+
 .brand,.brandNext,.brandName,.brandUser{
 cursor: pointer;
 }
