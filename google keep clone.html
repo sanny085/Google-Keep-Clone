@@ -14,7 +14,7 @@
     <style>
      .sidenav 
      {
-      height: 90%;
+      height: 75%;
       width: 0;
       position: fixed;
       z-index: 1;
@@ -62,21 +62,50 @@
   .sidenav a {font-size: 18px;}
 }
 
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 14px;
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 20px;
+}
+ .bulb{
+   background-color: #FFC107;
+   border-radius: 0px 20px 20px 0px;
+ }
+
     </style>
     <title> Sanny Keep </title>
    
   </head>
   <body>
- 
+    
+    <div class="icon-bar" onmouseover="toggleNav();" >
+      <a href="#" class="bulb"><i class="fas fa-lightbulb"></i></a> 
+      <a href="#" class="bell"><i class="fas fa-bell"></i></a> 
+      <a href="#" class="edit"><i class="fas fa-edit"></i></a> 
+      <a href="#" class="download"><i class="fas fa-download"></i></a>
+      <a href="#" class="delete"><i class="fas fa-trash-alt"></i></a> 
+    </div>
+  
     <!-- Image and text -->
      <nav class="navbar navbar-light bg-warning  m-0 ">
        <div class="container-fluid ">
      
     <div class="d-flex justify-content-between">
         <div class="flex-fill" >
-         <a class="navbar-brand "  >
+         <a class="navbar-brand ">
             
-              <span class="align-top  text-light closebtn" onclick="toggleNav();" style="font-size:27px;cursor:pointer;" >&#9776;</span>
+              <span class="align-top  text-light closebtn"  onclick="toggleNav();" style="font-size:27px;cursor:pointer;" >&#9776;</span>
             <i class="far fa-sticky-note brand d-inline-block align-top mx-3"></i>
             <span class="align-top brandName">Sanny Keep</span>
          </a>
@@ -92,15 +121,18 @@
      
        <div id="userIconSec1" >
           <div class="flex-fill mx-3">
-              <i class="text-light fas fa-redo-alt brandNext mx-2 align-middle"></i>
+              <i class="text-light fas fa-redo-alt brandNext mx-2 align-middle" onclick="location.reload();"></i>
               <i class="text-light fas fa-equals brandNext mx-2 align-middle"></i> 
-              <!--<i class="fas fa-th-large"></i>--> 
+              
+                <!--<i class="fas fa-th-large"></i>--> 
               <i class="text-light fas fa-cog brandNext mx-2 align-middle"></i>
           </div>
       </div>  
       <div id="userIconSec2" >
           <div class="flex-fill mx-2">
-            <i class="text-light fas fa-th brandNext mx-2 align-middle "></i> 
+            <a href="https://www.google.co.in/intl/en/about/products">
+              <i class="text-light fas fa-th brandNext mx-2 align-middle "></i> 
+            </a>
             <img class="brandUser mx-1  rounded-circle align-middle" src="images/Sanny Google Account image.JPG" alt=""> 
          </div>
       </div>
@@ -113,12 +145,12 @@
      
      <div id="main12"> 
 
-      <div id="mySidenav" class="sidenav">
-          <a  class="sideHo1" href="#">Notes</a>
-          <a id="sideHo" href="#">Remainders</a>
-          <a id="sideHo" href="#">Edit Label</a>
-          <a id="sideHo" href="#">Archive</a>
-          <a id="sideHo" href="#">Trash</a>
+  <div id="mySidenav" class="sidenav">
+     <a  class="sideHo1" href="#" onclick="toggleNav();"><i class="fas fa-lightbulb"></i>&nbsp;&nbsp;Notes</a>
+      <a id="sideHo" href="#" onclick="toggleNav();"><i class="fas fa-bell"></i>&nbsp;&nbsp;Remainders</a>
+      <a id="sideHo" href="#" onclick="toggleNav();"><i class="fas fa-edit"></i>&nbsp;&nbsp;Edit Label</a>
+      <a id="sideHo" href="#" onclick="toggleNav();"><i class="fas fa-download"></i>&nbsp;&nbsp;Archive</a>
+      <a id="sideHo" href="#" onclick="toggleNav();"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;Trash</a>
       </div>
   
   <!--main Section start-->
@@ -133,13 +165,14 @@
             </div>
          </div>
        </div>
-       
-       <div class="container">
+      <center>
+       <div class="container  ">
         <div class="row" id="section">
          <!--Sticky Note section-->
          <!--Sticky Note section End-->
         </div>
       </div>
+    </center>
   </section>
   <!--main Section End-->
       
