@@ -2,27 +2,25 @@ const addButton = document.querySelector('#add');
 const section = document.querySelector('#section');
 
 // Defining fat Arrow function updateLSData
-const updateLSData = () =>{
+const updateLSData = () => {
   const textAreaData = document.querySelectorAll('textarea');
   const userData = [];
-  
-  console.log(textAreaData);
-
+  console.log(textAreaData); 
+   
   textAreaData.forEach((collectData) =>{
       return userData.push(collectData.value);
   }) 
-  console.log(userData);
+  
   // set data into local storage 
   localStorage.setItem('userData', JSON.stringify(userData));
-
 }
 
 
-
 const addNewNote = (text = '') =>
-{ 
+  { 
    //column creation
    const colsec = document.createElement('div'); 
+   colsec.classList.add('col-xs-6'); 
    colsec.classList.add('col-sm-6'); 
    colsec.classList.add('col-md-4');
    colsec.classList.add('col-lg-3');  
@@ -41,9 +39,10 @@ const addNewNote = (text = '') =>
           <textarea class="${text ? "hidden":" "} form-control" rows="15" name="" id=""  ></textarea>
         `;
  //html data insert into note div
- note1.insertAdjacentHTML("afterbegin", htmlData);
-
-  //child in parent
+   note1.insertAdjacentHTML("afterbegin", htmlData);
+//note1.innerHTML =  htmlData;
+   
+   //child in parent
    section.appendChild(colsec,colsec.appendChild(note1));
   
    //Taking Reference for all Button and main
@@ -55,14 +54,13 @@ const addNewNote = (text = '') =>
    mainDiv.innerHTML = text;
    textArea.value  = text;
 
-
-   //deleting the node
-   deleteButton.addEventListener('click', ()=>{
+   //Deleting the node
+   deleteButton.addEventListener('click', () => {
        colsec.remove();
        updateLSData();
    });
-  
-   //toggle using edit button
+       
+   //Toggle using edit button ( function calling and defining ) 
    editButton.addEventListener('click', ()=>{
        mainDiv.classList.toggle('hidden');
        textArea.classList.toggle('hidden');
@@ -77,7 +75,6 @@ const addNewNote = (text = '') =>
       updateLSData();
    });
 
-
 }
  
 //get data from local storage       
@@ -86,4 +83,9 @@ if(userData){
 userData.forEach( (collectData) => addNewNote(collectData))
 };
 
-addButton.addEventListener("click", () => addNewNote() );
+
+
+addButton.addEventListener("click", () => addNewNote());
+
+
+
