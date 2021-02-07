@@ -101,7 +101,10 @@
   background: #DADCE0; 
   border-radius:15px;
 }
-
+a.decoration{
+  text-decoration: none;
+  color:#202124;
+}
 
     </style>
     <title> Sanny Keep </title>
@@ -118,7 +121,7 @@
     </div>
   
     <!-- Image and text -->
-     <nav class="navbar navbar-light bg-warning  m-0 ">
+     <nav class="navbar sticky-sm-top sticky-md-top sticky-lg-top navbar-light bg-warning  m-0 ">
        <div class="container-fluid ">
      
     <div class="d-flex justify-content-between">
@@ -153,11 +156,10 @@
               <i id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"  class="text-light fas fa-cog brandNext mx-2 align-middle"></i>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Send Feedback</a></li>
-                <li><a class="dropdown-item" href="#">Help</a></li>
-                <li><a class="dropdown-item" href="#">Help</a></li>
-                <li><a class="dropdown-item" href="#">App Download</a></li>
-                <li><a class="dropdown-item" href="#">Keyboard Shortcuts</a></li>
+                <li><a class="dropdown-item" href="https://support.google.com/chrome/answer/95315?co=GENIE.Platform%3DAndroid&hl=en">Send Feedback</a></li>
+                <li><a class="dropdown-item" href="https://support.google.com/keep/#topic=6262468">Help</a></li>
+                <li><a class="dropdown-item" href="https://play.google.com/store/apps/details?id=com.google.android.keep&hl=en_IN&gl=US">App Download</a></li>
+                <li><a class="dropdown-item" href="https://support.google.com/mail/answer/6594">Keyboard Shortcuts</a></li>
               </ul>
             </div>
           </div>
@@ -172,102 +174,138 @@
                
                 
            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <div class="container-fluid overflow-auto" id="appsection" style="width:300px;height:350px; ">
+                <div class="container-fluid overflow-auto" id="appsection" style="width:320px;height:350px; ">
                     
                     <div class="row p-2">
-                        <div class="col-md-4 col-sm-4 p-3">
+                        <div class="col-md-4 col-sm-4 col-xs-4 p-3">
                           <img class="brandUser mx-1   align-middle" src="images/Sanny Google Account image.JPG" alt="Account"> 
                           <br><span>Account</span>
                         </div>
-                        <div class="col-md-4 col-sm-4 p-3">
+                        <div class="col-md-4 col-sm-4 col-xs-4 p-3">
+                         <a class="decoration" href="https://www.google.com/">
                           <img class="brandUser mx-1  align-middle" src="images/google search.jpg" alt="Search"> 
                           <br><span class="mx-1">Search</span>
+                        </a>
                         </div>
-                        <div class="col-md-4 col-sm-4 p-3">
+                        <div class="col-md-4 col-sm-4 col-xs-4 p-3">
+                        <a class="decoration" href="https://www.google.com/maps">
                           <img class="brandUser mx-1    align-middle" src="images/map.png" alt="Maps"> 
                           <br><span class="mx-2">Maps</span>
+                        </a>
                         </div>
                     </div>
           
                     <div class="row p-2">
-                      <div class="col-md-4 col-sm-4 p-3">
+                      <div class="col-md-4 col-sm-4 col-xs-4 p-3">
+                      <a class="decoration" href="https://www.youtube.com/">
                         <img class="brandUser mx-1   align-middle" src="images/youtube.png" alt="youtube"> 
                         <br><span>YouTube</span>
+                      </a>
                       </div>
-                      <div class="col-md-4 col-sm-4 p-3">
+                     <div class="col-md-4 col-sm-4 col-xs-4 p-3">
+                      <a class="decoration" href="https://play.google.com/store">
                         <img class="brandUser mx-1   align-middle" src="images/play store.png" alt="play"> 
                         <br><span class="mx-2">Play</span>
-                      </div>
-                      <div class="col-md-4 col-sm-4 p-3">
+                      </a>
+                     </div>
+                      <div class="col-md-4 col-sm-4 col-xs-4 p-3">
+                        <a class="decoration" href="https://mail.google.com/mail">
                         <img class="brandUser mx-1   align-middle" src="images/gmail.jpg" alt="Gmail"> 
                         <br><span class="mx-1">Gmail</span>
+                      </a>
                       </div>
                   </div>
                   <div class="row p-2">
-                    <div class="col-md-4 col-sm-4 p-3">
+                    <div class="col-md-4 col-sm-4 col-xs-4 p-3">
+                    <a class="decoration" href="https://drive.google.com/drive/u/0/">
                       <img class="brandUser mx-1  align-middle" src="images/drive.png" alt="Drive"> 
                       <br><span class="mx-2">Drive</span>
+                    </a>
                     </div>
-                    <div class="col-md-4 col-sm-4 p-3">
+                    <div class="col-md-4 col-sm-4 col-xs-4 p-3">
+                    <a class="decoration" href="https://calendar.google.com/calendar/u/0/r">
                       <img class="brandUser mx-1 align-middle" src="images/calender.png" alt="calender"> 
-                      <span>Calender</span>
+                      <br><span>Calender</span>
+                    </a>
                     </div>
-                    <div class="col-md-4 col-sm-4 p-3">
+                    <div class="col-md-4 col-sm-4 col-xs-4 p-3">
+                    <a class="decoration" href="https://translate.google.co.in/?hl=en">
                       <img class="brandUser mx-1 align-middle" src="images/translate.png" alt="Translate"> 
-                      <span>Translate</span>
+                      <br><span>Translate</span>
+                    </a>
                     </div>
                 </div>
                 <!--4-->
                 <div class="row p-2">
-                  <div class="col-md-4 col-sm-4 p-3">
+                  <div class="col-md-4 col-sm-4 col-xs-4 p-3">
+                  <a class="decoration" href="https://photos.google.com/">
                     <img class="brandUser mx-1  align-middle" src="images/google photo.png" alt="Photos"> 
                     <br><span class="mx-1">Photos</span>
+                  </a>
                   </div>
-                  <div class="col-md-4 col-sm-4 p-3">
+                  <div class="col-md-4 col-sm-4 col-xs-4 p-3">
+                  <a class="decoration" href="https://news.google.com/topstories?hl=en-IN&gl=IN&ceid=IN:en">
                     <img class="brandUser mx-1 align-middle" src="images/news.jpg" alt="News"> 
-                    <span class="mx-1">News</span>
+                    <br><span class="mx-1">News</span>
+                  </a>
                   </div>
-                  <div class="col-md-4 col-sm-4 p-3">
+                  <div class="col-md-4 col-sm-4 col-xs-4 p-3">
+                  <a class="decoration" href="https://meet.google.com/?hs=197&pli=1&authuser=0">
                     <img class="brandUser mx-1 align-middle" src="images/meet.png" alt="Meet"> 
                     <span class="mx-1">Meet</span>
+                  </a>
                   </div>
               </div>
               <!--5-->
               <div class="row p-2">
-                <div class="col-md-4 col-sm-4 p-3">
+                <div class="col-md-4 col-sm-4 col-xs-4 p-3">
+                <a class="decoration" href="https://duo.google.com/?usp=duo_ald">
                   <img class="brandUser mx-1  align-middle" src="images/Duo.png" alt="Duo"> 
                   <br><span class="mx-2">Duo</span>
+                </a>
                 </div>
                 <br>
             </div>
             <!--6 other1-->
             <div class="row p-2 border-top">
-              <div class="col-md-4col-sm-4  p-3">
+              <div class="col-md-4 col-sm-4 col-xs-4  p-3">
+              <a class="decoration" href="https://www.google.co.in/shopping?hl=en&source=og&authuser=0">
                 <img class="brandUser mx-1 align-middle" src="images/shoping.png" alt="Shoping"> 
                 <br><span>Shoping</span>
+              </a>
               </div>
-              <div class="col-md-4 col-sm-4 p-3">
-                <img class="brandUser mx-1 align-middle" src="images/Docs.jpg" alt="Docs"> 
-                <span class="mx-2">Docs</span>
+              <div class="col-md-4 col-sm-4 col-xs-4 p-3">
+               <a class="decoration" href="https://docs.google.com/document/u/0/">
+                 <img class="brandUser mx-1 align-middle" src="images/Docs.jpg" alt="Docs"> 
+                 <br><span class="mx-2">Docs</span>
+               </a>
               </div>
-              <div class="col-md-4 col-sm-4 p-3">
+              <div class="col-md-4 col-sm-4 col-xs-4 p-3">
+               <a class="decoration" href="https://keep.google.com/u/0/">
                 <img class="brandUser mx-1 align-middle" src="images/keep.png" alt=""> 
-                <span class="mx-2">Keep</span>
+                <br><span class="mx-2">Keep</span>
+               </a>
               </div>
           </div>
           <!--7 other 2-->
           <div class="row p-2">
-            <div class="col-md-4 col-sm-4 p-3">
+            <div class="col-md-4 col-sm-4 col-xs-4 p-3">
+            <a class="decoration" href="https://classroom.google.com/u/0/">
               <img class="brandUser mx-1  align-middle" src="images/Room.jpg" alt="Room"> 
               <br><span class="mx-1">Room</span>
+            </a> 
             </div>
-            <div class="col-md-4 col-sm-4 p-3">
+            <div class="col-md-4 col-sm-4 col-xs-4 p-3">
+            <a class="decoration" href="https://earth.google.com/web/?authuser=0">
               <img class="brandUser mx-1 align-middle" src="images/Earth.jpg" alt="Earth"> 
-              <span class="mx-1">Earth</span>
+              <br><span class="mx-1">Earth</span>
+            </a> 
             </div>
-            <div class="col-md-4 col-sm-4 p-3">
+            <div class="col-md-4 col-sm-4 col-xs-4 p-3">
+            <a class="decoration" href="https://podcasts.google.com/">
               <img class="brandUser mx-1 align-middle" src="images/Podcast.png" alt="Podcast"> 
-              <span>Podcast</span>
+              <br><span>Podcast</span>
+            </a>
             </div>
         </div>
                     
