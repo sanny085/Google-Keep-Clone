@@ -15,9 +15,15 @@ color:#242B2E;
 font-size:22px;
 font-family: Arial, Helvetica, sans-serif;
 }
-.brandUser{
+.brandUser1{
 width:35px;
 height:35px;
+cursor:pointer;
+}
+
+.brandUser{
+    width:40px;
+    height:40px; 
 }
  
 #formWhole{
@@ -37,6 +43,10 @@ height:35px;
         display:none;
         margin-left:0;
     }
+    #userIconSec1A{
+        display:none;
+        margin-left:0;
+    }
     #userIconSec2{
         padding-left: 30px;
     }
@@ -46,7 +56,7 @@ height:35px;
 /*Small devices (landscape phones, 576px and up)*/ 
 @media (min-width: 576px) {
     #userIconSec1{
-        padding-left: 5px;
+        padding-left: 15px;
        
     }
     #userIconSec2{
@@ -57,7 +67,7 @@ height:35px;
 /*Medium devices (tablets, 768px and up)*/ 
 @media (min-width: 768px) { 
     #userIconSec1{
-        padding-left: 190px;
+        padding-left: 200px; 
     }
     #userIconSec2{
         padding-left: 10px;
@@ -67,7 +77,7 @@ height:35px;
 /*Large devices (desktops, 992px and up)*/ 
 @media (min-width: 992px) { 
     #userIconSec1{
-        padding-left: 320px;
+        padding-left: 400px;
     }
     #userIconSec2{
         padding-left: 10px;
@@ -153,6 +163,7 @@ border-radius:5%;
 .trash1{
 background-color: #e74c3c;
 }
+
 .edit1:hover{
 background-color: #fff;
 color:#2ecc71;
