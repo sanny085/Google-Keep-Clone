@@ -31,6 +31,11 @@ const addNewNote = (text = '') =>
    note1.classList.add('note');
    note1.classList.add('m-3');
    
+   //creating card for printing data
+   const cardData = document.createElement('div');
+   cardData.classList.add('card');
+
+   
     const htmlData = `<div class="operation"  style="float: right">
               <button class="edit border-0 bg-none"> <i class="fas fa-edit edit1"></i></button>
               <button class="delete border-0 bg-none" > <i class="fas fa-trash-alt trash1"></i></button>
