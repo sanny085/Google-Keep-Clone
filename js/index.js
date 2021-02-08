@@ -1,13 +1,3 @@
- 
-            //Left Toggle Navbar 
-                function toggleNav() {
-                  var leftside = document.getElementById("mySidenav");
-                  var main12 = document.getElementById("main12");
-                  leftside.style.width = leftside.style.width == "180px" ? '0' : '180px';
-                  main12.style.marginLeft = main12.style.marginLeft === "180px" ? '0' : '180px';
-                }
-   
-
 const addButton = document.querySelector('#add');
 const section = document.querySelector('#section');
 
