@@ -11,102 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <!--css link-->
     <link rel="stylesheet" href="css/style.css">
-<style>
- .sidenav 
-  {
-      height: 75%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      bottom: 0;
-      left: 0;
-      background-color: #fff;
-      overflow-x: hidden;
-      transition: 0.5s;
-      
-  }
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 18px;
-  color: #5f6368;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav .sideHo1{
-  background-color:#FEEFC3;
-  border-radius: 0px 20px 20px 0px;
-}
-
-.sidenav #sideHo:hover {
-  background-color: rgba(0,0,0,.1);
-  border-radius: 0px 20px 20px 0px;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 32px;
-  margin-left: 50px;
-}
-
-#main12 {
-  margin:0px;
-}
-
-#main12 {
-  transition: margin-left .3s;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-.icon-bar {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 12px;
-  transition: all 0.3s ease;
-  color: black;
-  font-size: 18px;
-}
-
- .bulb{
-   background-color: #FFC107;
-   border-radius: 0px 20px 20px 0px;
- }
- #appsection::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Track */
-#appsection::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
  
-/* Handle */
-#appsection::-webkit-scrollbar-thumb {
-  background: #DADCE0; 
-  border-radius:15px;
-}
-a.decoration{
-  text-decoration: none;
-  color:#202124;
-}
-
-    </style>
     <title> Sanny Keep </title>
    
   </head>
@@ -331,10 +236,10 @@ a.decoration{
 
   <div id="mySidenav" class="sidenav">
      <a  class="sideHo1" href="#" onclick="toggleNav();"><i class="fas fa-lightbulb"></i>&nbsp;&nbsp;Notes</a>
-      <a id="sideHo" href="#" onclick="toggleNav();"><i class="fas fa-bell"></i>&nbsp;&nbsp;Remainders</a>
-      <a id="sideHo" href="#" onclick="toggleNav();"><i class="fas fa-edit"></i>&nbsp;&nbsp;Edit Label</a>
-      <a id="sideHo" href="#" onclick="toggleNav();"><i class="fas fa-download"></i>&nbsp;&nbsp;Archive</a>
-      <a id="sideHo" href="#" onclick="toggleNav();"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;Trash</a>
+      <a id="sideHo" href="Remainders.html" onclick="toggleNav();"><i class="fas fa-bell"></i>&nbsp;&nbsp;Remainders</a>
+      <a id="sideHo" href="Edit label.html" onclick="toggleNav();"><i class="fas fa-edit"></i>&nbsp;&nbsp;Edit Label</a>
+      <a id="sideHo" href="Archive.html" onclick="toggleNav();"><i class="fas fa-download"></i>&nbsp;&nbsp;Archive</a>
+      <a id="sideHo" href="Trash.html" onclick="toggleNav();"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;Trash</a>
       </div>
   
   <!--main Section start-->
