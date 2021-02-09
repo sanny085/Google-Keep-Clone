@@ -235,8 +235,8 @@
 <div id="main12"> 
 
   <div id="mySidenav" class="sidenav">
-     <a  class="sideHo1" href="google keep clone.html" onclick="toggleNav();"><i class="fas fa-lightbulb"></i>&nbsp;&nbsp;Notes</a>
-      <a id="sideHo" href="#" onclick="toggleNav();"><i class="fas fa-bell"></i>&nbsp;&nbsp;Remainders</a>
+      <a id="sideHo" href="google keep clone.html" onclick="toggleNav();"><i class="fas fa-lightbulb"></i>&nbsp;&nbsp;Notes</a>
+      <a class="sideHo1" href="#" onclick="toggleNav();"><i class="fas fa-bell"></i>&nbsp;&nbsp;Remainders</a>
       <a id="sideHo" href="Edit label.html" onclick="toggleNav();"><i class="fas fa-edit"></i>&nbsp;&nbsp;Edit Label</a>
       <a id="sideHo" href="Archive.html" onclick="toggleNav();"><i class="fas fa-download"></i>&nbsp;&nbsp;Archive</a>
       <a id="sideHo" href="Trash.html" onclick="toggleNav();"><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;Trash</a>
@@ -256,7 +256,7 @@
        </div>
       <center>
        <div class="container  ">
-        <div class="row" id="section">
+        <div class="row" id="sectionRem">
          <!--Sticky Note section-->
          <!--Sticky Note section End-->
         </div>
@@ -279,19 +279,15 @@
 
         <!-- Custom JavaScript -->
         <script src="js/index.js" type="text/javascript"> </script>
-
-        <script>
-          function toggleNav() {
-
-            var sidenav = document.getElementById("mySidenav");
-            var main = document.getElementById("main12");
-            sidenav.style.width = sidenav.style.width == "180px" ? '0' : '180px';
-            main.style.marginLeft = main.style.marginLeft === "180px" ? '0' : '180px';
-         
-          }
- 
-
-          </script>
+        <script type="text/javascript">
+          //Left Toggle Navbar 
+              function toggleNav() {
+                var leftside = document.getElementById("mySidenav");
+                var main12 = document.getElementById("main12");
+                leftside.style.width = leftside.style.width == "180px" ? '0' : '180px';
+                main12.style.marginLeft = main12.style.marginLeft === "180px" ? '0' : '180px';
+              }
+      </script>
   </body>
 </html>
 
