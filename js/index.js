@@ -4,6 +4,7 @@ const addButton = document.querySelector('#add');
 const section = document.querySelector('#section');
 // //Remainder
 const sectionRem = document.querySelector('#sectionRem');
+const secRData = document.querySelector('#hideRemainder');
 
 // Defining fat Arrow function updateLSData
 const updateLSData = () => {
@@ -40,7 +41,7 @@ const addNewNote = (text = '') =>
     secRem.classList.add('col-lg-3'); 
  
      htmlData = `<div class="operation">
-              <button onclick="Remind()" class="pBell border-0 bg-none" style="float-left" > <i class="fas fa-bell pBell1"></i></button>
+              <button  class="pBell border-0 bg-none" style="float-left" > <i class="fas fa-bell pBell1"></i></button>
              
             <div style="float: right">
               <button class="edit border-0 bg-none" > <i class="fas fa-edit edit1"></i></button>
@@ -52,12 +53,13 @@ const addNewNote = (text = '') =>
         `;
    //html data insert into note div
    note1.insertAdjacentHTML("afterbegin", htmlData);
-  
+   
    //note1.innerHTML =  htmlData;
    
    //index page child in parent
-   section.appendChild(colsec,colsec.appendChild(note1)); 
-   
+   colsec.appendChild(note1);
+   section.appendChild(colsec); 
+    
    
    //Taking Reference for all Button and main
    const editButton = note1.querySelector('.edit'); 
@@ -69,12 +71,12 @@ const addNewNote = (text = '') =>
    mainDiv.innerHTML = text;
    textArea.value  = text;
     
+ 
 
-   pBellButton.addEventListener('click', ()=>{
-    secRem.innerHTML = htmlData; 
-    sectionRem.appendChild(secRem);
-    addNewNote();
-   
+
+   pBellButton.addEventListener('click', ()=> {
+      note1.classList.toggle('redborder');
+      
     });  
 
    //Deleting the node
@@ -84,21 +86,21 @@ const addNewNote = (text = '') =>
    });
        
    //Toggle using edit button ( function calling and defining ) 
-   editButton.addEventListener('click', ()=>{
+   editButton.addEventListener('click', ()=> {
        mainDiv.classList.toggle('hidden');
        textArea.classList.toggle('hidden');
     });
   
     // change data to hold given all input
-   textArea.addEventListener('change', (event)=>{
+   textArea.addEventListener('change', (event)=> {
       const value = event.target.value;
       mainDiv.innerHTML = value;
       
       //calling updateLSData fat arrow funtion
       updateLSData();
    });
-
 }
+
  
 //get data from local storage       
 const userData = JSON.parse(localStorage.getItem('userData'));
@@ -107,9 +109,7 @@ userData.forEach( (collectData) => addNewNote(collectData))
 };
 
 
-
 addButton.addEventListener("click", () => addNewNote());
-
 //Remainder page
 
   
