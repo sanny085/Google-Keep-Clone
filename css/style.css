@@ -147,20 +147,53 @@ border:none;
 
 .note{
 width:100%;
-height:150px;
+height:250px;
 border: 1px solid grey;
 overflow: auto;
+}
+.note {
+  transition: box-shadow .3s;
+  margin: 50px;
+  border-radius:8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  }
+.note:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
  
 .trash1, 
 .edit1{
+margin:2px;
+position: sticky;
 color:#fff;
 padding:10px;
 background-color: #2ecc71;
 border-radius:5%;
-
 }
+.pBell1, .trash1, .edit{
+  display:none;
+}
+.note:hover .pBell1{
+  display:block;
+}
+.note:hover .trash1{
+  display:inline;
+}
+.note:hover .edit{
+  display:inline;
+}
+.pBell1{
+  transition:1s;
+  margin:2px;
+  position: sticky;
+  color:#fff;
+  padding:10px;
+  background-color: #2d312e;
+  border-radius:5%;
+}
+
 .trash1{
 background-color: #e74c3c;
 }
@@ -176,16 +209,19 @@ color: #e74c3c;
 filter: drop-shadow(0px 10px 8px rgba(219,218, 218));
 border:none;
 }
+
 .main{
 padding-top:45px;
-padding-left:5px;
+padding-left:20px;
 font-size:18px;
 overflow-y: hidden;
 }
 .hidden{
 display:none;
 }
-
+.redborder{
+  border: 1px solid red;
+}
 
 /*Side Bar*/
 .sidenav 
