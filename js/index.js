@@ -1,5 +1,3 @@
-var htmlData;
-
 const addButton = document.querySelector('#add');
 const section = document.querySelector('#section');
 // //Remainder
@@ -40,7 +38,7 @@ const addNewNote = (text = '') =>
     secRem.classList.add('col-md-4');
     secRem.classList.add('col-lg-3'); 
  
-     htmlData = `<div class="operation">
+   var htmlData = `<div class="operation">
               <button  class="pBell border-0 bg-none" style="float-left" > <i class="fas fa-bell pBell1"></i></button>
              
             <div style="float: right">
