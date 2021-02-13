@@ -55,10 +55,8 @@ const addNewNote = (text = '') =>
    //note1.innerHTML =  htmlData;
    
    //index page child in parent
-   colsec.appendChild(note1);
-   section.appendChild(colsec); 
-    
-   
+  section.appendChild(colsec,colsec.appendChild(note1)); 
+ 
    //Taking Reference for all Button and main
    const editButton = note1.querySelector('.edit'); 
    const deleteButton = note1.querySelector('.delete'); 
