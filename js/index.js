@@ -71,7 +71,7 @@ const addNewNote = (text = '') =>
 
 
    pBellButton.addEventListener('click', ()=> {
-      note1.classList.toggle('redborder');
+      note1.classList.toggle('.pBell');
       
     });  
 
