@@ -1,5 +1,7 @@
 const addButton = document.querySelector('#add');
 const section = document.querySelector('#section');
+
+
 // //Remainder
 const sectionRem = document.querySelector('#sectionRem');
 const secRData = document.querySelector('#hideRemainder');
@@ -31,12 +33,6 @@ const addNewNote = (text = '') =>
    const note1 = document.createElement('div');
    note1.classList.add('note');
    note1.classList.add('m-2');
-   // remainder of note
-    const secRem = document.createElement('div');
-    secRem.classList.add('col-xs-6');
-    secRem.classList.add('col-sm-6');
-    secRem.classList.add('col-md-4');
-    secRem.classList.add('col-lg-3'); 
  
    var htmlData = `<div class="operation">
               <button  class="pBell border-0 bg-none" style="float-left" > <i class="fas fa-bell pBell1"></i></button>
@@ -65,15 +61,8 @@ const addNewNote = (text = '') =>
    const pBellButton = note1.querySelector('.pBell');
 
    mainDiv.innerHTML = text;
-   textArea.value  = text;
-    
- 
-
-
-   pBellButton.addEventListener('click', ()=> {
-      note1.classList.toggle('.pBell');
-      
-    });  
+   textArea.value  = text;  
+   
 
    //Deleting the node
    deleteButton.addEventListener('click', () => {
