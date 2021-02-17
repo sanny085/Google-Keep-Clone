@@ -1,7 +1,5 @@
 const addButton = document.querySelector('#add');
 const section = document.querySelector('#section');
-
-
 // //Remainder
 const sectionRem = document.querySelector('#sectionRem');
 const secRData = document.querySelector('#hideRemainder');
