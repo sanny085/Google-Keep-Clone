@@ -13,7 +13,6 @@ const updateLSData = () => {
   textAreaData.forEach((collectData) =>{
       return userData.push(collectData.value);
   }) 
-  
   // set data into local storage 
   localStorage.setItem('userData', JSON.stringify(userData));
 }
