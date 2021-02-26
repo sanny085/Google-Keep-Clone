@@ -13,9 +13,11 @@ const updateLSData = () => {
   textAreaData.forEach((collectData) =>{
       return userData.push(collectData.value);
   }) 
-  // set data into local storage 
-  localStorage.setItem('userData', JSON.stringify(userData));
+  
+    // set data into local storage 
+    localStorage.setItem('userData', JSON.stringify(userData));
 }
+
 
 const addNewNote = (text = '') =>
   { 
@@ -30,8 +32,14 @@ const addNewNote = (text = '') =>
    const note1 = document.createElement('div');
    note1.classList.add('note');
    note1.classList.add('m-2');
+   // remainder of note
+    const secRem = document.createElement('div');
+    secRem.classList.add('col-xs-6');
+    secRem.classList.add('col-sm-6');
+    secRem.classList.add('col-md-4');
+    secRem.classList.add('col-lg-3'); 
  
-   var htmlData = `<div class="operation">
+    var htmlData = `<div class="operation">
               <button  class="pBell border-0 bg-none" style="float-left" > <i class="fas fa-bell pBell1"></i></button>
              
             <div style="float: right">
@@ -48,8 +56,10 @@ const addNewNote = (text = '') =>
    //note1.innerHTML =  htmlData;
    
    //index page child in parent
-  section.appendChild(colsec,colsec.appendChild(note1)); 
- 
+  
+   section.appendChild(colsec, colsec.appendChild(note1)); 
+    
+   
    //Taking Reference for all Button and main
    const editButton = note1.querySelector('.edit'); 
    const deleteButton = note1.querySelector('.delete'); 
@@ -58,8 +68,12 @@ const addNewNote = (text = '') =>
    const pBellButton = note1.querySelector('.pBell');
 
    mainDiv.innerHTML = text;
-   textArea.value  = text;  
-   
+   textArea.value  = text;
+
+   pBellButton.addEventListener('click', ()=> {
+      this.note1.classList.toggle('.pBell');
+      
+    });  
 
    //Deleting the node
    deleteButton.addEventListener('click', () => {
@@ -77,7 +91,6 @@ const addNewNote = (text = '') =>
    textArea.addEventListener('change', (event)=> {
       const value = event.target.value;
       mainDiv.innerHTML = value;
-      
       //calling updateLSData fat arrow funtion
       updateLSData();
    });
@@ -89,7 +102,6 @@ const userData = JSON.parse(localStorage.getItem('userData'));
 if(userData){
 userData.forEach( (collectData) => addNewNote(collectData))
 };
-
 
 addButton.addEventListener("click", () => addNewNote());
 //Remainder page
