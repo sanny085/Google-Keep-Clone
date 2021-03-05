@@ -18,7 +18,6 @@ const updateLSData = () => {
     localStorage.setItem('userData', JSON.stringify(userData));
 }
 
-
 const addNewNote = (text = '') =>
   { 
    //index page column creation
