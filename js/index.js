@@ -96,14 +96,14 @@ const addNewNote = (text = '') =>
    });
 }
 
- 
 //get data from local storage       
 const userData = JSON.parse(localStorage.getItem('userData'));
 if(userData){
 userData.forEach( (collectData) => addNewNote(collectData))
 };
 
+//Add Button calling for new function()
 addButton.addEventListener("click", () => addNewNote());
-//Remainder page
+
 
   
