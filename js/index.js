@@ -31,7 +31,8 @@ const addNewNote = (text = '') =>
    const note1 = document.createElement('div');
    note1.classList.add('note');
    note1.classList.add('m-2');
-   // remainder of note
+  
+    // remainder of note
     const secRem = document.createElement('div');
     secRem.classList.add('col-xs-6');
     secRem.classList.add('col-sm-6');
@@ -55,10 +56,8 @@ const addNewNote = (text = '') =>
    //note1.innerHTML =  htmlData;
    
    //index page child in parent
-  
    section.appendChild(colsec, colsec.appendChild(note1)); 
-    
-   
+     
    //Taking Reference for all Button and main
    const editButton = note1.querySelector('.edit'); 
    const deleteButton = note1.querySelector('.delete'); 
@@ -71,8 +70,8 @@ const addNewNote = (text = '') =>
 
    pBellButton.addEventListener('click', ()=> {
       this.note1.classList.toggle('.pBell');
-      
-    });  
+ 
+   });  
 
    //Deleting the node
    deleteButton.addEventListener('click', () => {
@@ -104,5 +103,3 @@ userData.forEach( (collectData) => addNewNote(collectData))
 //Add Button calling for new function()
 addButton.addEventListener("click", () => addNewNote());
 
-
-  
