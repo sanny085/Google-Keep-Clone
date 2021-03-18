@@ -1,5 +1,6 @@
 const addButton = document.querySelector('#add');
 const section = document.querySelector('#section');
+
 // //Remainder
 const sectionRem = document.querySelector('#sectionRem');
 const secRData = document.querySelector('#hideRemainder');
@@ -17,6 +18,7 @@ const updateLSData = () => {
     // set data into local storage 
     localStorage.setItem('userData', JSON.stringify(userData));
 }
+
 
 const addNewNote = (text = '') =>
   { 
